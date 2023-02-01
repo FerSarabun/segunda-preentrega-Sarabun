@@ -85,7 +85,7 @@ background-color: white;
 width: 100%;
 height: 30px;
 color: rgb(143, 51, 230);
-position: fixed;
+position:unset;
 bottom: 0%;
 }
 
@@ -245,9 +245,20 @@ main{
     grid-area: tituloDos;
 }
 
-/* estilo de pantallas de celulares */
+/* estilo de pantallas de celulares blog*/
 
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px) {
+
+    /* estilos de footer */ 
+    
+    footer h3{
+       font-size: 15px;
+       text-align: center;
+    }
+
+editar imagen porcentaje 
+
+    }
 
 
-}
+
