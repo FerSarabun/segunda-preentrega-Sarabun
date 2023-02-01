@@ -35,10 +35,9 @@ header nav ul li{
     background-color:rgb(152, 67, 233);
     padding: 10px;
     border-radius: 30px;
-    margin-right: 2rem;
-
-    
+    margin-right: 3rem;
 }
+
 
 
 header nav ul li:hover{
@@ -154,6 +153,8 @@ bottom: 0%;
     color: whitesmoke;
 }
 
+/* animaciones texto preguntas */ 
+
 .pregunta1, .pregunta2{
     animation-name: animacionTexto;
     animation-iteration-count: initial;
@@ -256,9 +257,18 @@ main{
        text-align: center;
     }
 
-editar imagen porcentaje 
+  /* estilos imagen logo*/ 
 
+  header nav img{
+    width: 70%; 
+}
+
+header nav ul li{
+    background-color: rgb(166, 112, 216);
+    border-style: double;
     }
+
+}
 
 
 
