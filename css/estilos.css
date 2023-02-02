@@ -257,10 +257,16 @@ main{
        text-align: center;
     }
 
-  /* estilos imagen logo*/ 
+  /* estilos header*/ 
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
 
   header nav img{
-    width: 70%; 
+    width: 23rem; 
 }
 
 header nav ul li{
