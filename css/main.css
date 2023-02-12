@@ -1,0 +1,63 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* estilos generales */
+body {
+  background-image: linear-gradient(#9843e9, #ad77e0); }
+
+/* estilos del header */
+header {
+  background-color: white;
+  padding: 10px;
+  height: 225px; }
+
+header nav ul {
+  list-style: none;
+  gap: 40px; }
+  header nav ul li {
+    list-style: none;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'PT Serif', serif;
+    background-color: #9843e9;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 3rem; }
+    header nav ul li:hover {
+      background-color: #f8f863;
+      transform: scale(1.1);
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.548);
+      text-decoration: none; }
+
+/* estilos del main */
+main img {
+  float: left; }
+
+main h1 {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  font-weight: bold; }
+
+main p {
+  color: #f8f817;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 40px; }
+
+/* estilos del footer */
+footer {
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  color: #8f33e6;
+  position: unset;
+  bottom: 0%; }
