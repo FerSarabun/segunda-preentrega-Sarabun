@@ -5,10 +5,16 @@
     padding:0;
 }
 
+
+//variables //
+
+@import "../scss/variables/variables";
+
+
 /* estilos generales */
 
 body{
-    background-image: linear-gradient(rgb(152, 67, 233), rgb(173, 119, 224));
+    background-image: linear-gradient($color-primario, rgb(173, 119, 224));
 }
 
 /* estilos del header */
@@ -31,12 +37,12 @@ header{
                 color: white;
                 letter-spacing: 2px;
                 font-family: 'PT Serif', serif;
-                background-color:rgb(152, 67, 233);
+                background-color:$color-primario;
                 padding: 10px;
                 border-radius: 30px;
                 margin-right: 3rem;
                 &:hover{
-                    background-color:rgb(248, 248, 99);
+                    background-color:$color-amarillo;
                     transform:scale(1.1);
                     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.548);
                     text-decoration:none;
@@ -68,7 +74,7 @@ main{
 
 main{
     p{
-        color: rgb(248, 248, 23);
+        color: $color-amarillo;
         font-weight: bolder;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-align: center;
@@ -88,4 +94,41 @@ main{
         bottom: 0%;
         }
 
-        
+
+/*estilos productos*/
+
+@import "../scss/paginas/productos";
+
+/*estilos preguntas */
+
+@import "../scss/paginas/preguntas";
+
+//estilos blog//
+@import "../scss/paginas/blog";
+
+/*estilos contacto*/
+
+@import "../scss/paginas/contacto";
+
+/* aplicacion extend a botones */
+
+%botones {
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(143, 51, 230);
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(95, 93, 93);
+}
+
+/* aplicacion mixins */
+
+@mixin animaciones{
+    animation-name: animacionTexto;
+    animation-iteration-count: initial;
+    animation-duration: 2s;
+}
+

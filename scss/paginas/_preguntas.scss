@@ -1,0 +1,76 @@
+
+
+// variables //
+
+@import "../variables/variables";
+
+.textoPreguntas{
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    h2{
+        color: whitesmoke;
+    }
+}
+
+/*animaciones texto preguntas*/
+
+.textoPreguntas{
+    .pregunta1{
+    animation-name: animacionTexto;
+    animation-iteration-count: initial;
+    animation-duration: 2s;
+    }
+    .pregunta2{
+        animation-name: animacionTexto;
+        animation-iteration-count: initial;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes animacionTexto {
+    0%{
+        transform: scale(0);
+    }
+
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*aplicacion de grid */
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+    "titulo"
+    "p"
+    "tituloDos"
+    "pDos";
+    justify-content: center;
+    justify-items: center;
+}
+
+.pregunta1{
+ h2{
+    grid-area: titulo;
+ }
+ p{
+    grid-area: p;
+}
+}
+
+.pregunta2{
+    h2{
+    grid-area: tituloDos;
+}
+    p{
+    grid-area: tituloDos;
+}
+}

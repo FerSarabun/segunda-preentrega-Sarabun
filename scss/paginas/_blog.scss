@@ -1,0 +1,74 @@
+
+
+//variables //
+
+@import "../variables/variables";
+
+/* estilos del blog */
+
+.articuloBlog {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.articuloBlog{
+    img{
+        width: 350px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.articuloBlog{
+    .text-container{
+        flex: 1;
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+.articuloBlog{
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+/* estilo pantallas celulares */
+
+@media screen and (max-width: 600px){
+
+    /* estilos del footer */
+
+    footer{
+        h3{
+            font-size: 15px;
+                text-align: center;} 
+    }
+
+
+    /* estilos header */
+
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    
+    nav{
+        img{
+            width: 23rem; 
+        }
+        ul{
+            li{
+                background-color: rgb(166, 112, 216);
+                border-style: double;
+                }    
+        }
+    }
+}
+}

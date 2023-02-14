@@ -46,7 +46,7 @@ main h1 {
   font-weight: bold; }
 
 main p {
-  color: #f8f817;
+  color: #f8f863;
   font-weight: bolder;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
@@ -61,3 +61,139 @@ footer {
   color: #8f33e6;
   position: unset;
   bottom: 0%; }
+
+/*estilos productos*/
+main .contenedorProducto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 40px; }
+
+main .contenedorProducto .producto {
+  margin: 10px; }
+
+main .contenedorProducto .productoImagen {
+  width: 350px;
+  margin-bottom: 10px;
+  box-shadow: 3px 3px 3px #746d6d; }
+  main .contenedorProducto .productoImagen:hover {
+    transition: all .5s ease-in-out;
+    webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d; }
+
+main .contenedorProducto .producto .productoDescripcion .botonVer:hover {
+  background-color: #f8f863;
+  transform: scale(0.9);
+  text-decoration: none; }
+
+/*estilos preguntas */
+.textoPreguntas {
+  text-align: center;
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  .textoPreguntas h2 {
+    color: whitesmoke; }
+
+/*animaciones texto preguntas*/
+.textoPreguntas .pregunta1 {
+  animation-name: animacionTexto;
+  animation-iteration-count: initial;
+  animation-duration: 2s; }
+
+.textoPreguntas .pregunta2 {
+  animation-name: animacionTexto;
+  animation-iteration-count: initial;
+  animation-duration: 2s; }
+
+@keyframes animacionTexto {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+/*aplicacion de grid */
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "titulo" "p" "tituloDos" "pDos";
+  justify-content: center;
+  justify-items: center; }
+
+.pregunta1 h2 {
+  grid-area: titulo; }
+
+.pregunta1 p {
+  grid-area: p; }
+
+.pregunta2 h2 {
+  grid-area: tituloDos; }
+
+.pregunta2 p {
+  grid-area: tituloDos; }
+
+/* estilos del blog */
+.articuloBlog {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; }
+
+.articuloBlog img {
+  width: 350px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px; }
+
+.articuloBlog .text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.articuloBlog h2 {
+  text-align: center; }
+
+.articuloBlog p {
+  text-align: center; }
+
+/* estilo pantallas celulares */
+@media screen and (max-width: 600px) {
+  /* estilos del footer */
+  footer h3 {
+    font-size: 15px;
+    text-align: center; }
+  /* estilos header */
+  header {
+    display: flex;
+    justify-content: space-evenly; }
+    header nav img {
+      width: 23rem; }
+    header nav ul li {
+      background-color: #a670d8;
+      border-style: double; } }
+
+/*estilos contacto*/
+.formularioContacto {
+  color: whitesmoke;
+  margin: 10px;
+  font-weight: bold;
+  text-decoration: underline; }
+
+/* aplicacion extend a botones */
+main .contenedorProducto .producto .productoDescripcion .botonVer {
+  font-size: 19px;
+  font-weight: bold;
+  color: #8f33e6;
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 3px 3px 5px #5f5d5d; }
+
+/* aplicacion mixins */
