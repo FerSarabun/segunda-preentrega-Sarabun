@@ -156,13 +156,23 @@ main {
   align-items: center; }
 
 .articuloBlog h2 {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center; }
 
 .articuloBlog p {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center; }
 
 /* estilo pantallas celulares */
 @media screen and (max-width: 600px) {
+  .articuloBlog h2 {
+    font-size: 1rem; }
+  .articuloBlog p {
+    font-size: 0.8rem; }
+  .articuloBlog img {
+    width: 50%; }
   /* estilos del footer */
   footer h3 {
     font-size: 15px;
