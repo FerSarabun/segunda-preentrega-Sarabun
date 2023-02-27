@@ -135,7 +135,7 @@ main {
   grid-area: tituloDos; }
 
 .pregunta2 p {
-  grid-area: tituloDos; }
+  grid-area: pDos; }
 
 /* estilos del blog */
 .articuloBlog {
@@ -192,7 +192,39 @@ main {
   color: whitesmoke;
   margin: 10px;
   font-weight: bold;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-align: center; }
+
+main section form fieldset {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-template-areas: "nombre inputNombre"  "correo inputCorreo"  "telefono inputTelefono"  "consulta inputConsulta"; }
+
+.nombre {
+  grid-area: nombre; }
+
+.inputNombre {
+  grid-area: inputNombre; }
+
+.correo {
+  grid-area: correo; }
+
+.inputCorreo {
+  grid-area: inputCorreo; }
+
+.telefono {
+  grid-area: telefono; }
+
+.inputTelefono {
+  grid-area: inputTelefono; }
+
+.consulta {
+  grid-area: consulta; }
+
+.inputConsulta {
+  grid-area: inputConsulta; }
 
 /* aplicacion extend a botones */
 main .contenedorProducto .producto .productoDescripcion .botonVer {
