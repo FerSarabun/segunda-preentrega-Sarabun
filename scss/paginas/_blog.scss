@@ -21,6 +21,37 @@
     }
 }
 
+/* grid areas */ 
+
+.contenedorBlog{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+    "nombreBlog"
+    "contenedorArticulos"
+    "footerBlog";
+    justify-content: center;
+    justify-items: center;
+}
+
+.nombreBlog {
+    grid-area: nombreBlog;
+}
+
+.contenedorArticulos{
+    grid-area: contenedorArticulos;
+}
+
+.footerBlog{
+    grid-area: footerBlog;
+}
+
+
+/* aplicacion flex */
+
+
 .articuloBlog{
     .text-container{
         flex: 1;
