@@ -51,3 +51,23 @@ main{
 }
 }
 
+/* aplicacion grid */
+
+.listaProductos{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+
+    grid-template-areas: 
+    "tituloProd"
+    "contenedorProducto";
+}
+
+.tituloProd {
+    grid-area: tituloProd;
+}
+
+.contenedorProducto{
+    grid-area: contenedorProducto;
+}
+
