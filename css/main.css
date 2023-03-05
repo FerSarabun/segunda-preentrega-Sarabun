@@ -33,9 +33,27 @@ header nav ul {
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.548);
       text-decoration: none; }
 
+/* aplicacion grid */
+.contenedorPrincipal {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imagenIndex aside"; }
+
+.imagenIndex {
+  grid-area: imagenIndex;
+  margin: 0.5rem; }
+
+.aside {
+  grid-area: aside; }
+
+.footerIndex {
+  grid-area: footerIndex; }
+
 /* estilos del main */
 main img {
-  float: left; }
+  width: 100%;
+  display: inline-block; }
 
 main h1 {
   color: white;
